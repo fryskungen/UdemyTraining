@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 var a int
 var b int
@@ -15,10 +17,9 @@ func main() {
 	switch {
 
 	case b > a:
-		fmt.Println(int(b)/int(a), "with a remainder of", int(b)%int(a))
+		fmt.Println(b, "/", a, "=", int(b)/int(a), "with a remainder of", int(b)%int(a))
 	default:
-		fmt.Println("Large number must be larger than small number, try again")
-
+		fmt.Println("Large number must be larger than small number, try again") //command to restart from "enter number??
 	}
 
 }
