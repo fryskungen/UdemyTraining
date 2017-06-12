@@ -25,6 +25,7 @@ func main() {
 	fmt.Println(n)
 	sort.Sort(sort.Reverse(sort.IntSlice(n)))
 	fmt.Println(n)
-	sort.Sort(sort.Reverse(sort.Strings(s)))
-	fmt.Println(s)
+	sort.Sort(sort.Reverse(sort.StringSlice(s))) //IntSlice/StringSlice implementerar Interface interface genom metoderna de defienras med.
+	fmt.Println(s)				     // "konvertera" s till en STringslice så funkar det
+
 }
